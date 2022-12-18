@@ -13,8 +13,10 @@ int main() {
     const std::uint32_t frequency1 = 20;
     const std::uint32_t frequency2 = 60;
     const std::uint32_t samplesPerSymbol = 200;
-    const std::uint32_t messageLength = 6;
+
+    // Enter the binary mesage you want to modulate, and its size in number of bits here
     std::bitset<MaxMessageLength> message = 0b110010;
+    const std::uint32_t messageLength = 6;
 
     // Initialize the fskModulator object
     FSKModulator fskModulator(frequency1, frequency2, samplesPerSymbol, messageLength, message);
