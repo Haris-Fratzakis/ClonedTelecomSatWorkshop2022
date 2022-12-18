@@ -8,6 +8,11 @@ After the presentation and some live demonstrations, the participants will split
 
 In the context of this workshop, you will need to install an IDE that supports C++ and CMake (preferably CLion, instructions below) and GNURadio. It is recommended to use a Linux operating system but not required. The steps you need to follow prior to attending the workshop (**Thessaloniki 19/12/22 17:00**, **Athens 20/12/22 17:00**) are the following:
 
+### Downloading this project
+
+- You can either use **Git** to clone this repository
+- Or hit the *Download Button* next to *Clone* to download the repository as a `.zip` file. Then unzip the project.
+
 ### CLion 
 
 If you want to install **CLion**(recommended):
