@@ -1,21 +1,20 @@
+#pragma once
+
 #include <array>
 #include <bitset>
 #include <cstdint>
+#include "helpers.hpp"
 
 namespace FSK {
 
 class FSKModulator {
   public:
-    /**
-     * Maximum number of samplesPerSymbol and in this context the maximum
-     * sampling frequency as well (20kHz).
-     */
-    static constexpr std::uint32_t MaxSamplesPerSymbol = 20000;
+
 
     /**
      * Type declaration of the output buffer
      */
-    using BufferType = std::array<float, MaxSamplesPerSymbol * 6>;
+    using BufferType = std::array<float, MaxSamplesPerSymbol * MaxMessageLength>;
 
     /**
      * FSKModulator class constructor
@@ -23,8 +22,9 @@ class FSKModulator {
      * @param frequency2
      * @param samplesPerSymbol
      */
-    FSKModulator(std::uint32_t frequency1, std::uint32_t frequency2, std::uint32_t samplesPerSymbol)
-        : f1(frequency1), f2(frequency2), samplesPerSymbol(samplesPerSymbol), inputData(0b110010){};
+    FSKModulator(std::uint32_t frequency1, std::uint32_t frequency2, std::uint32_t samplesPerSymbol,
+                 const std::uint32_t messageLength, std::bitset<MaxMessageLength> message)
+        : f1(frequency1), f2(frequency2), samplesPerSymbol(samplesPerSymbol), messageLength(messageLength), inputData(message){};
 
     /**
      * Getter for samplesPerSymbol variable
@@ -62,9 +62,14 @@ class FSKModulator {
     std::uint32_t samplesPerSymbol;
 
     /**
+     * Input message length
+     */
+    std::uint32_t messageLength;
+
+    /**
      * Internal buffer for the input data
      */
-    std::bitset<6> inputData;
+    std::bitset<MaxMessageLength> inputData;
 
     /**
      * Internal buffer for the output modulated waveform

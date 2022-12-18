@@ -6,7 +6,7 @@
 
 namespace GNURadioHelpers {
 
-auto convertForGNURadio(std::array<float, 20000 * 6> const& samples, std::uint16_t sampleNumber, char const* binFile) -> void {
+auto convertForGNURadio(std::array<float, MaxSamplesPerSymbol * MaxMessageLength> const& samples, std::uint16_t sampleNumber, char const* binFile) -> void {
     std::fstream output {};
     output.open(binFile, std::ios::out);
     for (std::size_t i = 0; i < sampleNumber; i++) {
