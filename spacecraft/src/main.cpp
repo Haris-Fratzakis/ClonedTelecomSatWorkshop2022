@@ -2,7 +2,7 @@
 #include "helpers.hpp"
 #include <fstream>
 
-auto main() -> int {
+int main() {
     using FSK::FSKModulator;
 
     std::fstream file("../fskOutput.bin");
