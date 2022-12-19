@@ -14,7 +14,7 @@ int main() {
     const std::uint32_t frequency2 = 60;
     const std::uint32_t samplesPerSymbol = 200;
 
-    // Enter the binary mesage you want to modulate, and its size in number of bits here
+    // Enter the binary message you want to modulate, and its size in number of bits here
     std::bitset<MaxMessageLength> message = 0b110010;
     const std::uint32_t messageLength = 6;
 
