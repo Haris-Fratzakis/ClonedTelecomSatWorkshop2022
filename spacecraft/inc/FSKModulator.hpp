@@ -46,7 +46,7 @@ class FSKModulator {
   private:
 
     /**
-     * Frequency of the snusoidal waveform representing symbol "0"
+     * Frequency of the sinusoidal waveform representing symbol "0"
      */
     std::uint32_t f1;
 

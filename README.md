@@ -2,7 +2,7 @@
 
 ---
 
-Welcome to this totally awesome repository, that is definetely going to make you telecommunication specialists in just a few hours!
+Welcome to this totally awesome repository, that is definitely going to make you telecommunication specialists in just a few hours!
 
 After the presentation and some live demonstrations, the participants will split into two teams: one implementing the Spacecraft side and the other the Ground Station. For representativeness, the first team will make use of **C++** to code an **FSK modulator** and the latter will utilize **GNURadio** to implement an **FSK demodulator**. At first, the teams will act independently, testing their implementation with test data provided by us. Then, the teams will try to make their implementations to communicate, simulating an actual Satellite to Earth communication!
 
