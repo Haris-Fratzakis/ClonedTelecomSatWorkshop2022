@@ -142,7 +142,7 @@ class fskDemodulation(gr.top_block, Qt.QWidget):
             noise_seed=0,
             block_tags=True)
         self.blocks_float_to_complex_0 = blocks.float_to_complex(1)
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_float*1, '/home/kikas/Desktop/a3sat/spacecraft-communications-workshop-2022/ground-station/io/fskOutput.bin', True, 0, 0)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_float*1, '/home/kikas/Desktop/a3sat/spacecraft-communications-workshop-2022/ground-station/io/fskModulatedMessage.bin', True, 0, 0)
         self.blocks_file_source_0.set_begin_tag(pmt.PMT_NIL)
         self.blocks_complex_to_real_0 = blocks.complex_to_real(1)
 

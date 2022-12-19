@@ -138,7 +138,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [848, 556.0]
+    coordinate: [792, 436.0]
     rotation: 0
     state: disabled
 - name: blocks_add_const_vxx_0
@@ -156,7 +156,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1312, 652.0]
+    coordinate: [1272, 516.0]
     rotation: 0
     state: disabled
 - name: blocks_char_to_float_0
@@ -173,7 +173,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [864, 660.0]
+    coordinate: [824, 524.0]
     rotation: 0
     state: disabled
 - name: blocks_complex_to_real_0
@@ -199,7 +199,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: /home/kikas/Desktop/a3sat/spacecraft-communications-workshop-2022/ground-station/io/fskOutput.bin
+    file: ''
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -263,7 +263,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1064, 568.0]
+    coordinate: [1024, 432.0]
     rotation: 0
     state: disabled
 - name: freq_xlating_fir_filter_xxx_0
@@ -283,7 +283,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1056, 628.0]
+    coordinate: [1016, 492.0]
     rotation: 0
     state: disabled
 - name: qtgui_time_sink_x_0
@@ -380,7 +380,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [312, 412.0]
+    coordinate: [272, 548.0]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -400,7 +400,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1216, 492.0]
+    coordinate: [1176, 356.0]
     rotation: 0
     state: disabled
 - name: virtual_sink_0
